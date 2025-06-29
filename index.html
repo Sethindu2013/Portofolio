@@ -1178,7 +1178,13 @@
     <p>&copy; 2025 Sethindu Sethnada. All rights reserved. | Crafted with <i class="fas fa-heart" style="color: #ec4899;"></i> and endless passion for technology.</p>
   </footer>
 
-  <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+
     // Loading Screen
     window.addEventListener('load', () => {
       const loadingScreen = document.getElementById('loadingScreen');
@@ -1422,6 +1428,8 @@
         imageObserver.observe(img);
       });
     }
+
+    <!-- Example Google Analytics Code -->
   </script>
 </body>
 </html>
